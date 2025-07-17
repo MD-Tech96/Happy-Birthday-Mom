@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 55th Birthday Mom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #fce4ec, #ffffff);
+      color: #333;
+    }
+    header {
+      background: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-family: 'Playfair Display', serif;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .quote-section {
+      text-align: center;
+      font-style: italic;
+      margin: 2rem;
+      font-size: 1.5rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      border-radius: 15px;
+      width: 250px;
+      height: 300px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .message-section {
+      background: #fff3e0;
+      padding: 2rem;
+      text-align: center;
+    }
+    .message-section h2 {
+      color: #bf360c;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+    }
+    .message-section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+    footer {
+      background-color: #d7ccc8;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .rose-decor {
+      width: 250px;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy 55th Birthday Mom</h1>
+    <p>With all our love, admiration, and gratitude</p>
+  </header>
+
+  <section class="quote-section">
+    <img src="Rose.jpeg" alt="rose" class="rose-decor" />
+    <p>“To the world you may be one person, but to us you are the world.”</p>
+    <p>“A mother is your first friend, your best friend, your forever friend.”</p>
+  </section>
+
+  <section class="gallery">
+    <img src="1mum.jpeg" alt="Mom Image 1" />
+    <img src="mum2.jpeg" alt="Mom Image 2" />
+    <img src="https://source.unsplash.com/252x300/?family,happy" alt="Mom Image 3" />
+    <img src="https://source.unsplash.com/253x300/?birthday,celebration" alt="Mom Image 4" />
+  </section>
+
+  <section class="message-section">
+    <h2>A Letter From the Heart</h2>
+    <p>Dear Mom,</p>
+    <p>
+      On this beautiful day, we celebrate the incredible woman you are. You’ve given us strength,
+      wisdom, and unconditional love. Every moment spent with you is a blessing. As you turn 55,
+      we look back with joy and forward with excitement for the beautiful memories yet to come.
+    </p>
+    <p>
+      Thank you for being our rock, our guide, and our source of endless warmth.
+      We love you beyond words.
+    </p>
+    <p>
+      — With all our hearts, Your Loving Family ❤️
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Celebrating Mom | Designed with love by Mweene</p>
+  </footer>
+
+  <script>
+    (function() {
+      const roseImages = [
+        'https://source.unsplash.com/100x100/?red-rose',
+        'https://source.unsplash.com/100x100/?rose-bouquet',
+        'https://source.unsplash.com/100x100/?pink-rose',
+      ];
+      let index = 0;
+      const roseDecor = document.querySelector('.rose-decor');
+      setInterval(() => {
+        index = (index + 1) % roseImages.length;
+        roseDecor.src = roseImages[index];
+      }, 3000);
+    })();
+  </script>
+</body>
+</html>
